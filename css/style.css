@@ -1,0 +1,193 @@
+/***** generics *****/
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/***** utilities *****/
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+
+/** flex **/
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.column {
+    width: 100%;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/** /flex **/
+
+/*** shared ***/
+
+.card {
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card.text-left {
+    text-align: left;
+}
+
+
+/*** /shared ***/
+
+/***** content *****/
+
+header {
+    position: fixed;
+    background-color: #0084fd;
+    width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+}
+
+.menu {
+    color: #fff;
+}
+
+.menu ul {
+    display: none;
+}
+
+header .fa-bars,
+header img {
+    vertical-align: middle;
+}
+
+
+main {
+    padding-top: 80px;
+}
+
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section:nth-of-type(even) {
+    background-color: #9792e4;
+}
+
+
+/* product-presentation */
+#product-presentation .card {
+    background-color: #b5ddff;
+}
+
+#product-presentation .column:first-child .card {
+    padding-bottom: 0;
+}
+
+/* /product-presentation */
+
+footer {
+    background-color: #333333;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+
+    #product-presentation .column {
+        width: calc(100% / 3);
+        padding: 0 10px;
+    }
+
+    #product-presentation .column:first-child {
+        width: calc(100% / 3 * 2);
+    }
+
+    #product-presentation img {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .menu .fa-bars {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+
+    #product-presentation .column:first-child .card {
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+
+/***** debug *****/
+
+.debug section {
+    min-height: 500px;
+}
+
+.debug footer {
+    min-height: 160px;
+}
+
+.debug .column {
+    min-height: 350px;
+    border: 1px dashed red;
+}
+
+.debug .card {
+    height: 100%;
+}
