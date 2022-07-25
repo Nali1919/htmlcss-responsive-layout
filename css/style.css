@@ -142,6 +142,7 @@ header {
     width: 100%;
     min-height: 80px;
     line-height: 80px;
+    z-index: 999;
 }
 
 .menu {
