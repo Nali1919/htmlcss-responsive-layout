@@ -27,6 +27,41 @@ ul {
     padding: 0 20px;
 }
 
+.column-planning {
+    color: black;
+}
+
+.container-planning {
+    width: 100%;
+    padding: 80px 20px;
+}
+
+.container-started {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.container-footer {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners h2,
+span,
+p {
+    margin-top: 20px;
+}
+
+.partners h2 {
+    color: #0084fd;
+}
+
+
 
 /** flex **/
 .flex {
@@ -69,6 +104,33 @@ ul {
     text-align: left;
 }
 
+.card-partners {
+    border-radius: 40px;
+    text-align: center;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.card-benefits {
+    border-radius: 25px;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+.test-1 {
+    clip-path: circle(35%);
+}
+
+
 
 /*** /shared ***/
 
@@ -93,11 +155,31 @@ header {
 header .fa-bars,
 header img {
     vertical-align: middle;
+    margin-bottom: 0;
 }
 
 
 main {
     padding-top: 80px;
+}
+
+.about {
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutus {
+    clip-path: circle(50%);
+}
+
+footer {
+    background-color: #333333;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -110,6 +192,24 @@ section:nth-of-type(even) {
     background-color: #9792e4;
 }
 
+.fa-circle-arrow-down {
+    color: #9792e4;
+    font-size: 35px;
+
+}
+
+.planning-white {
+    color: white;
+
+}
+
+.planning-white h2 {
+    margin-top: 80px;
+}
+
+.planning-white p {
+    margin-top: 40px;
+}
 
 /* product-presentation */
 #product-presentation .card {
@@ -118,6 +218,43 @@ section:nth-of-type(even) {
 
 #product-presentation .column:first-child .card {
     padding-bottom: 0;
+}
+
+#product-presentation button {
+    height: 35px;
+    border-radius: 50px;
+    background-color: #0084fd;
+    color: white;
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 0;
+
+}
+
+#product-presentation i {
+    color: #0084fd;
+    font-size: 80px;
+}
+
+#button-1 i {
+    color: white;
+    font-size: 15px;
+}
+
+#product-presentation h2,
+p,
+i {
+    margin-bottom: 40px;
+}
+
+#product-presentation h2 {
+    color: #0084fd;
+}
+
+#button-1 i {
+    margin-bottom: 0;
 }
 
 /* /product-presentation */
@@ -166,28 +303,4 @@ footer {
         flex-direction: row;
     }
 
-}
-
-
-
-
-
-
-/***** debug *****/
-
-.debug section {
-    min-height: 500px;
-}
-
-.debug footer {
-    min-height: 160px;
-}
-
-.debug .column {
-    min-height: 350px;
-    border: 1px dashed red;
-}
-
-.debug .card {
-    height: 100%;
 }
