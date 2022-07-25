@@ -42,6 +42,12 @@ ul {
     padding: 0 20px;
 }
 
+.container-benefits {
+    width: 100%;
+    text-align: center;
+    padding: 20px 20px;
+}
+
 .container-footer {
     text-align: center;
     margin-top: -50px;
@@ -112,6 +118,7 @@ p {
     flex-direction: column;
     padding: 20px;
     margin-bottom: 20px;
+    color: white;
 
 }
 
@@ -123,7 +130,27 @@ p {
     flex-direction: column;
     padding: 20px;
     margin-bottom: 20px;
+}
 
+.container-benefits h2 {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.card-benefits h2,
+h3 {
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+
+.card-benefits button {
+    color: white;
+    background-color: #9792e4;
+    margin-top: 5px;
+    width: 120px;
+    border: 0;
+    border-radius: 15px;
+    height: 30px;
 }
 
 .test-1 {
@@ -168,10 +195,44 @@ main {
     max-width: 80px;
     display: flex;
     flex-direction: column;
+    color: #9792e4;
+    row-gap: 20px;
+}
+
+.about h2 {
+    width: 300px;
+}
+
+.titleaboutus {
+    color: #9792e4;
+}
+
+.about button {
+    background-color: #9792e4;
+    color: white;
+    width: 180px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    line-height: 30px;
+}
+
+.fa-linkedin {
+    color: white;
+    margin-right: 15px;
 }
 
 .aboutus {
     clip-path: circle(50%);
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    color: #9792e4;
+    left: 79px;
+    font-size: 60px;
+
 }
 
 footer {
@@ -264,6 +325,36 @@ footer {
     background-color: #333333;
 }
 
+.containter-started p {
+    color: white;
+    margin: 40px 0;
+}
+
+.container-started h2 {
+    color: orange;
+    margin: 40px 0;
+}
+
+.container-started h3 {
+    color: white;
+    margin: 40px 0;
+}
+
+.container-started span {
+    margin-top: 40px;
+    color: white;
+}
+
+.container-started button {
+    margin-bottom: 40px;
+    color: #9792e4;
+    background-color: white;
+    width: 180px;
+    height: 35px;
+    border: 0;
+    border-radius: 15px;
+}
+
 
 
 
@@ -303,5 +394,7 @@ footer {
     #product-presentation .column:first-child .card {
         flex-direction: row;
     }
+
+
 
 }
