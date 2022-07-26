@@ -226,7 +226,7 @@ i {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 20px 20px;
+    margin: 10px 5px;
 }
 
 .container-benefits h2 {
@@ -256,8 +256,88 @@ h3 {
     margin-left: 30px;
 }
 
+/* / benefits */
 
+/* aboutus */
+.about button {
+    background-color: #9792e4;
+    color: white;
+    width: 180px;
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    line-height: 30px;
+}
 
+.fa-linkedin {
+    color: white;
+    margin-right: 15px;
+}
+
+.aboutus {
+    clip-path: circle(50%);
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    color: #9792e4;
+    left: 79px;
+    font-size: 60px;
+
+}
+
+.about {
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    color: #9792e4;
+    row-gap: 20px;
+}
+
+.about h2 {
+    width: 300px;
+}
+
+/* / about us */
+/* started */
+.containter-started p {
+    color: white;
+    margin: 40px 0;
+}
+
+.container-started h2 {
+    color: orange;
+    margin: 40px 0;
+}
+
+.container-started h3 {
+    color: white;
+    margin: 40px 0;
+}
+
+.container-started span {
+    margin-top: 40px;
+    color: white;
+}
+
+.container-started button {
+    margin-bottom: 40px;
+    color: #9792e4;
+    background-color: white;
+    width: 180px;
+    height: 35px;
+    border: 0;
+    border-radius: 15px;
+}
+
+.container-started {
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* / started */
 
 /* testimonials */
 
@@ -291,6 +371,19 @@ footer {
     background-color: #333333;
 }
 
+.end {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: -50px;
+    text-align: center;
+
+}
+
+.end a {
+    color: aqua;
+}
+
 @media screen and (min-width: 768px) {
 
     #product-presentation .column {
@@ -309,6 +402,10 @@ footer {
 
     #testimonials .card.flex {
         flex-direction: row;
+    }
+
+    #benefits .column {
+        width: calc(100% / 2);
     }
 
 
