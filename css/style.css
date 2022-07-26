@@ -1,4 +1,15 @@
+/***** variables *****/
+:root {
+    --even-section-bg-color: #9792e4;
+}
+
+
+
 /***** generics *****/
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -7,7 +18,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 img {
@@ -27,52 +38,12 @@ ul {
     padding: 0 20px;
 }
 
-.column-planning {
-    color: black;
-}
-
-.container-planning {
-    width: 100%;
-    padding: 80px 20px;
-}
-
-.container-started {
-    text-align: center;
-    width: 100%;
-    padding: 0 20px;
-}
-
-.container-benefits {
-    width: 100%;
-    text-align: center;
-    padding: 20px 20px;
-}
-
-.container-footer {
-    text-align: center;
-    margin-top: -50px;
-}
-
-.partners {
-    text-align: center;
-}
-
-.partners h2,
-span,
-p {
-    margin-top: 20px;
-}
-
-.partners h2 {
-    color: #0084fd;
-}
-
-
 
 /** flex **/
 .flex {
     display: flex;
 }
+
 
 .row {
     display: flex;
@@ -106,58 +77,32 @@ p {
     padding: 20px;
 }
 
+.first-card {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
 .card.text-left {
     text-align: left;
 }
 
-.card-partners {
-    border-radius: 40px;
-    text-align: center;
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
-    color: white;
 
+.quoted-text::before,
+.quoted-text::after {
+    font-size: 70px;
+    color: #fff;
+    line-height: 0;
+    vertical-align: bottom;
 }
 
-.card-benefits {
-    border-radius: 25px;
-    text-align: left;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 20px;
+.quoted-text::before {
+    content: open-quote;
 }
 
-.container-benefits h2 {
-    color: white;
-    margin-bottom: 50px;
+.quoted-text::after {
+    content: close-quote;
 }
-
-.card-benefits h2,
-h3 {
-    color: #9792e4;
-    margin-bottom: 20px;
-}
-
-.card-benefits button {
-    color: white;
-    background-color: #9792e4;
-    margin-top: 5px;
-    width: 120px;
-    border: 0;
-    border-radius: 15px;
-    height: 30px;
-}
-
-.test-1 {
-    clip-path: circle(35%);
-}
-
-
 
 /*** /shared ***/
 
@@ -183,65 +128,11 @@ header {
 header .fa-bars,
 header img {
     vertical-align: middle;
-    margin-bottom: 0;
 }
 
 
 main {
     padding-top: 80px;
-}
-
-.about {
-    max-width: 80px;
-    display: flex;
-    flex-direction: column;
-    color: #9792e4;
-    row-gap: 20px;
-}
-
-.about h2 {
-    width: 300px;
-}
-
-.titleaboutus {
-    color: #9792e4;
-}
-
-.about button {
-    background-color: #9792e4;
-    color: white;
-    width: 180px;
-    height: 30px;
-    border: 0;
-    border-radius: 15px;
-    line-height: 30px;
-}
-
-.fa-linkedin {
-    color: white;
-    margin-right: 15px;
-}
-
-.aboutus {
-    clip-path: circle(50%);
-    position: relative;
-}
-
-h1 {
-    position: absolute;
-    color: #9792e4;
-    left: 79px;
-    font-size: 60px;
-
-}
-
-footer {
-    background-color: #333333;
-}
-
-.end {
-    display: flex;
-    flex-direction: column;
 }
 
 
@@ -251,27 +142,9 @@ section {
 }
 
 section:nth-of-type(even) {
-    background-color: #9792e4;
+    background-color: var(--even-section-bg-color);
 }
 
-.fa-circle-arrow-down {
-    color: #9792e4;
-    font-size: 35px;
-
-}
-
-.planning-white {
-    color: white;
-
-}
-
-.planning-white h2 {
-    margin-top: 80px;
-}
-
-.planning-white p {
-    margin-top: 40px;
-}
 
 /* product-presentation */
 #product-presentation .card {
@@ -282,17 +155,19 @@ section:nth-of-type(even) {
     padding-bottom: 0;
 }
 
+#product-presentation h2 {
+    color: var(--even-section-bg-color);
+}
+
 #product-presentation button {
-    height: 35px;
+    padding: 15px;
     border-radius: 50px;
     background-color: #0084fd;
     color: white;
-    width: 50%;
-    margin-left: 50px;
+    width: 70%;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 0;
-
 }
 
 #product-presentation i {
@@ -320,43 +195,101 @@ i {
 }
 
 /* /product-presentation */
+/* planning  */
+
+.planning-white h2 {
+    margin-top: 80px;
+}
+
+.planning-white p {
+    margin-top: 40px;
+}
+
+.column-planning {
+    color: black;
+}
+
+.container-planning {
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* / planning */
+
+/*benefits*/
+.card-benefits {
+    border-radius: 25px;
+    text-align: left;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.container-benefits h2 {
+    color: white;
+    margin-bottom: 5px;
+
+
+}
+
+.card-benefits h2,
+h3 {
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+
+.card-benefits button {
+    color: white;
+    background-color: #9792e4;
+    margin-top: 5px;
+    width: 120px;
+    border: 0;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.benefits-text {
+    margin-left: 30px;
+}
+
+
+
+
+/* testimonials */
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials h2 {
+    color: var(--even-section-bg-color);
+}
+
+#testimonials .card {
+    background-color: var(--even-section-bg-color);
+}
+
+#testimonials img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%
+}
+
+
+#testimonials .card.flex {
+    flex-direction: column;
+}
+
+/* /testimonials */
 
 footer {
     background-color: #333333;
 }
-
-.containter-started p {
-    color: white;
-    margin: 40px 0;
-}
-
-.container-started h2 {
-    color: orange;
-    margin: 40px 0;
-}
-
-.container-started h3 {
-    color: white;
-    margin: 40px 0;
-}
-
-.container-started span {
-    margin-top: 40px;
-    color: white;
-}
-
-.container-started button {
-    margin-bottom: 40px;
-    color: #9792e4;
-    background-color: white;
-    width: 180px;
-    height: 35px;
-    border: 0;
-    border-radius: 15px;
-}
-
-
-
 
 @media screen and (min-width: 768px) {
 
@@ -374,9 +307,14 @@ footer {
     }
 
 
+    #testimonials .card.flex {
+        flex-direction: row;
+    }
+
+
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
 
     .menu .fa-bars {
         display: none;
@@ -395,6 +333,48 @@ footer {
         flex-direction: row;
     }
 
+    .container-planning {
+        margin: 0 auto;
+        max-width: 750px;
+    }
+
+    .container-planning .column {
+        width: calc(100% / 2);
+    }
+
+    #testimonials .container {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    #benefits .column {
+        width: calc(100% / 3);
+    }
+
+    #benefits .container-benefits {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+}
 
 
+
+
+/***** debug *****/
+
+.debug section {
+    min-height: 500px;
+}
+
+.debug .column {
+    min-height: 200px;
+}
+
+.debug .card {
+    height: 100%;
+}
+
+.debug footer {
+    min-height: 160px;
 }

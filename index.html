@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title>Responsive Layout</title>
 </head>
 
-<body>
+<body class="debug">
     <!-- HEADER -->
     <header>
         <div class="container">
@@ -42,15 +44,18 @@
                 <div class="row">
                     <div class="column">
                         <div class="card">
-                            <h2>Get a demo application</h2>
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
-                                dolores quo debitis beatae commodi totam cumque est
-                                voluptatem, corrupti doloremque itaque, qui nesciunt cum natus
-                                maxime deleniti a aut magnam.
-                            </p>
-                            <button id="button-1"><i class="fa-brands fa-apple"></i> App store</button>
-                            <img src="img/phone.png" alt="Get a Demo" />
+                            <div class="first-card">
+                                <h2>Get a demo application</h2>
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                                    dolores quo debitis beatae commodi totam cumque est
+                                    voluptatem, corrupti doloremque itaque, qui nesciunt cum natus
+                                    maxime deleniti a aut magnam.
+                                </p>
+                                <button id="button-1"><i class="fa-brands fa-apple"></i> App store</button>
+                                <img src="img/phone.png" alt="Get a Demo" />
+                            </div>
+
                         </div>
                     </div>
                     <div class="column">
@@ -93,15 +98,19 @@
             </div>
         </section>
         <section>
-            <div class="container-planning">
-                <img src="./img/planning1.png" alt="">
-                <div class="planning-white">
-                    <h2>Strategic Planning</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam laborum expedita
-                        voluptates!
-                        Sunt, corporis consequuntur odio quo in nesciunt quis. Similique impedit deserunt necessitatibus
-                        placeat dignissimos doloribus ipsam! Expedita!</p>
-                    <div class="column-planning">
+            <div class="container-planning flex">
+                <div class="row ">
+                    <div class="column ">
+                        <img src="./img/planning1.png" alt="">
+                        <h2>Strategic Planning</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsam laborum expedita
+                            voluptates!
+                            Sunt, corporis consequuntur odio quo in nesciunt quis. Similique impedit deserunt
+                            necessitatibus
+                            placeat dignissimos doloribus ipsam! Expedita!</p>
+                    </div>
+
+                    <div class="column">
                         <div class="card">
                             <img src="./img/planning2.png" alt="">
                             <h2>App Developement</h2>
@@ -110,166 +119,179 @@
                                 consequuntur odio debitis quod?</p>
                             <i class="fa-solid fa-circle-arrow-down"></i>
                         </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <!-- testimonials section -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h3>Testimonials</h3>
+                        <h2>We are committed expert partners</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Corrupti adipisci quia recusandae aliquid repellat eos magni
+                            maxime perferendis voluptatum ad dicta nostrum doloribus sed,
+                            hic sunt quis similique corporis nihil.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <div class="card flex">
+                            <div>
+                                <img src="img/testimonial1.jpg" alt="testimonial name" />
+                            </div>
+                            <div>
+                                <p class="quoted-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Voluptatibus fugit eum id labore officiis quae, laudantium
+                                    inventore! Fuga cum quaerat provident velit, reiciendis,
+                                    commodi eos vel assumenda repellat exercitationem
+                                    aspernatur?
+                                </p>
+                                <div class="sign">NATHAN DRAKE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card flex">
+                            <div>
+                                <img src="img/testimonial1.jpg" alt="testimonial name" />
+                            </div>
+                            <div>
+                                <p class="quoted-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Voluptatibus fugit eum id labore officiis quae, laudantium
+                                    inventore! Fuga cum quaerat provident velit, reiciendis,
+                                    commodi eos vel assumenda repellat exercitationem
+                                    aspernatur?
+                                </p>
+                                <div class="sign">NATHAN DRAKE</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="card flex">
+                            <div>
+                                <img src="img/testimonial1.jpg" alt="testimonial name" />
+                            </div>
+                            <div>
+                                <p class="quoted-text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Voluptatibus fugit eum id labore officiis quae, laudantium
+                                    inventore! Fuga cum quaerat provident velit, reiciendis,
+                                    commodi eos vel assumenda repellat exercitationem
+                                    aspernatur?
+                                </p>
+                                <div class="sign">NATHAN DRAKE</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /testimonials section -->
+
+        <section id="benefits">
+            <div class="container-benefits">
+                <div class="row">
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card-benefits">
+                            <h2>01</h2>
+                            <h3>Creative Team</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis
+                                distinctio quo
+                                hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid
+                                nemo at
+                                recusandae
+                                error animi illo tempore tempora.</p>
+                            <button>more</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="container">
-                <div class="partners">
-                    <span>Testimonial</span>
-                    <h2>We are committed expert partners</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sunt cum illo obcaecati,
-                        distinctio ipsam sapiente maiores rerum omnis aliquam. Accusamus aliquam iusto unde recusandae
-                        odio
-                        blanditiis quas nemo exercitationem?</p>
-                </div>
-                <div class="card-partners">
-                    <img class="test-1" src="./img/testimonial1.jpg" alt="">
-                    <p>''Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem consequatur, nemo
-                        dolorum fugit a voluptas nesciunt mollitia nam ea error porro accusamus at. Quos dicta
-                        consequuntur odio debitis quod''
-                    <h2>Nate Reynolds</h2>
-                    </p>
-                </div>
-                <div class="card-partners">
-                    <img class="test-1" src="./img/testimonial2.jpg" alt="">
-                    <p>''Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem consequatur, nemo
-                        dolorum fugit a voluptas nesciunt mollitia nam ea error porro accusamus at. Quos dicta
-                        consequuntur odio debitis quod''
-                    </p>
-                    <h2>Celia Almeda</h2>
-                </div>
-                <div class="card-partners">
-                    <img class="test-1" src="./img/testimonial3.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione autem consequatur, nemo
-                        dolorum fugit a voluptas nesciunt mollitia nam ea error porro accusamus at. Quos dicta
-                        consequuntur odio debitis quod?
-                    </p>
-                    <h2>Bob Roberts</h2>
-                </div>
+            <div class="container"></div>
         </section>
         <section>
-            <div class="container-benefits">
-                <h2>Benefits of working with us</h2>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>High Quality</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>Creative Team</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>Amazing Results</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>Best Pricing</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>Innovations</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-                <div class="card-benefits">
-                    <h2>01</h2>
-                    <h3>24/7 Support</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis perferendis distinctio quo
-                        hic voluptas et libero iste architecto ratione? Officiis consectetur aliquid nemo at recusandae
-                        error animi illo tempore tempora.</p>
-                    <button>more</button>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="titleaboutus">
-                    <H2>About us</H2>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quibusdam voluptas autem, dolore
-                    quaerat et commodi. Sequi saepe ut optio aliquam minima, iusto tenetur, enim, ex doloribus culpa
-                    voluptates. Nam!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At iure saepe nihil. Eligendi, quas! Magni
-                    similique laboriosam itaque repellendus? Totam odit ut id blanditiis soluta voluptatum quod vero,
-                    aperiam illum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati omnis quibusdam animi
-                    eveniet, consequuntur quo accusamus nam voluptatum, fugiat, pariatur enim error numquam sapiente
-                    eligendi? Libero reiciendis excepturi repellendus.
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae vero praesentium suscipit, accusamus
-                    quam blanditiis sunt quisquam autem odio consequuntur, repellat soluta, facilis earum! Laudantium
-                    dolores veritatis perspiciatis itaque voluptates.</p>
-                <div class="about"><img class="aboutus" src="./img/about.jpg" alt>
-                    <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni consequuntur saepe, volupto.
-                    </h2>
-                    <button><i class="fa-brands fa-linkedin"></i> Find me on linkedin</button>
-                    <h1>“</h1>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div class="container-started">
-                <span>Get started</span>
-                <h3>Simple, Transparent, Pricing</h3>
-                <h2>It's Free</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, possimus adipisci quae
-                    sapiente
-                    porro ipsum praesentium nisi velit minus quid
-                </p>
-                <button>Get Started</button>
-
-            </div>
-
-
-
-            </div>
+            <div class="container"></div>
         </section>
     </main>
     <!-- /MAIN -->
     <!-- FOOTER -->
     <footer>
-        <div class="container-footer">
-            <div class=" end">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae hic dolores obcaecati quia, nemo
-                    ratione consectetur, totam vero quam excepturi consequatur rerum reiciendis aut maiores nobis sint
-                    autem
-                    id eos.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis explicabo repellat vitae.
-                    Dignissimos non voluptatum eum, fugit reiciendis possimus voluptatibus autem cum provident,
-                    doloribus
-                    nemo laudantium magni officia, saepe earum.</p>
-            </div>
-
-        </div>
+        <div class="container"></div>
     </footer>
     <!-- /FOOTER -->
-
-
-
-
-
 </body>
 
 </html>
